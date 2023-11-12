@@ -1,6 +1,15 @@
 from fastapi import FastAPI
-from .routers import chatbot
+from fastapi.middleware.cors import CORSMiddleware
+
+from .routers import ChatRouter
 
 app = FastAPI()
 
-app.include_router(chatbot.router)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+app.include_router(ChatRouter)
