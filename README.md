@@ -1,6 +1,10 @@
 # Chatbot Portfolio Backend
 This is the backend of the portfolio project **Chatbot Portfolio**. It uses FastAPI, Langchain and Qdrant for RAG implementation.
 
+<p align="center">
+  <img src="assets/chart.gif" alt="Chart Portafolio Data flow GIF">
+</p>
+
 This backend offers a single endpoint for chatbot implementation using Langchain, LlamaCPP, Qdrant and Sentence-Trasformers.
 
 Read the article attached [here](#).
