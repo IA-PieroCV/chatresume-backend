@@ -20,7 +20,7 @@ Python is the base language of this server application, so an environment (using
 
 1. Install the requirements using: 
 ```bash
-   pip install -r requirements.txt
+pip install -r requirements.txt
  ```
 2. Download and locate the model on the models folder on `app/core/models`. You can download the model from [Hugging Faces here](https://huggingface.co/TheBloke/SynthIA-7B-v2.0-GGUF/blob/main/synthia-7b-v2.0.Q2_K.gguf).
 
