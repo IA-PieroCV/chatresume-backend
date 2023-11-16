@@ -56,8 +56,7 @@ docker run chatbot-backend -p 8000:8000
 ```
 
 ## Practical Solutions
-- Due to the lack of efficiency of embeddings models, the full document was provided to the LLM manually. You can check this on the `app/core/setup_bot.py`.
-- Qdrant docker compose file is provided, but not used in this version of the chatbot. You can see it's setup in the commented block on `app/core/setup_bot.py`.
+- Due to the lack of efficiency of embeddings models, the full document could be provided to the LLM manually. This can be implemented on the `app/core/setup_bot.py`. Qdrant and embedding models wouldn't be used with this approach.
 - As the initial version of the software (non-comitted) was used without LangServe to custom output format, LangServe was not used for this implementation.
 
 ## Potential Improvements
