@@ -1,7 +1,5 @@
 # User Defined
 notebooks/
-app/core/models/*.gguf
-app/core/database_files/*.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
