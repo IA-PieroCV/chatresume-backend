@@ -22,11 +22,13 @@ Python is the base language of this server application, so an environment (using
 ```bash
    pip install -r requirements.txt
  ```
-2. Download and locate the model on the models folder on `core/models`. You can download the model from [Hugging Faces here](https://huggingface.co/TheBloke/SynthIA-7B-v2.0-GGUF/blob/main/synthia-7b-v2.0.Q2_K.gguf).
+2. Download and locate the model on the models folder on `app/core/models`. You can download the model from [Hugging Faces here](https://huggingface.co/TheBloke/SynthIA-7B-v2.0-GGUF/blob/main/synthia-7b-v2.0.Q2_K.gguf).
 
 *Note: You can use any model you want, but ensure that the prompt is correctly formatted on `app/core/setup_bot.py`.*
 
-3. You can test the solution directly using
+3. Put the CV information in the `app/core/database_files` in TXT format (with `CVText.txt` name for straighforward execution). You can change the file input on `app/core/setup_bot.py`.
+
+4. You can test the solution directly using
 ```bash
 uvicorn app.main:app
 ```
@@ -34,7 +36,7 @@ uvicorn app.main:app
 ### Qdrant Implementation
 A Qdrant docker compose file is provided on `images/docker-compose.yml` to use Vector Store in this solution (the most recommended way to make RAG).
 
-4. Deploy the docker container for Qdrant Vector Database.
+5. Deploy the docker container for Qdrant Vector Database.
 ```bash
 docker compose -f ./images/docker-compose.yml up -d
 ```
@@ -43,12 +45,12 @@ docker compose -f ./images/docker-compose.yml up -d
 **WARNING**: I highly recommend that you can test the LLM locally before implementing this to a docker container for production. Due to requirements and large files, the build could take long time. Be careful in your CI/CD processes.
 I provide a `.dockerignore` file in order you to take out the files you consider not needed.
 
-1. In order to run this project you can also build your own docker image and run it on a server. A DockerFile is provided for this.
+6. In order to run this project you can also build your own docker image and run it on a server. A DockerFile is provided for this.
 ```bash
 docker build -t chatbot-backend
 ``` 
 
-1. Once the image is built, you can run it using the `docker run` command.
+7. Once the image is built, you can run it using the `docker run` command.
 ```bash
 docker run chatbot-backend -p 8000:8000
 ```
