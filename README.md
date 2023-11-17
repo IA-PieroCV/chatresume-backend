@@ -10,7 +10,7 @@ This backend offers a single endpoint for chatbot implementation using Langchain
 Read the article attached [here](#).
 
 ## Implementation Disclaimer
-After the release of Open AI GPT's, this server was shutdown in order to make a full client web application redirecting to GPT's. This is in order to save resources. However, this application can be cloned, tested and modified if needed.
+After the release of Open AI GPT's, this server was shutdown in order to make a full client web application redirecting to GPT's. This is in order to save resources. However, this application can be cloned, tested and modified if needed. For frontend implementation see [this repo](https://github.com/IA-PieroCV/chatresume-frontend). For client implementation [click here](https://chatapp.intautomation.net). For GPT's implementation [click here](https://chat.openai.com/g/g-oK5Dh6p5x-pierocv-chat-resume).
 
 ## Instalation
 This section shows the process to install the full chatbot from scratch.
