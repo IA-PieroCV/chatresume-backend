@@ -7,7 +7,7 @@ This is the backend of the portfolio project **Chatbot Portfolio**. It uses Fast
 
 This backend offers a single endpoint for chatbot implementation using Langchain, LlamaCPP, Qdrant and Sentence-Trasformers.
 
-Read the article attached [here](#).
+Read the article attached [here](https://medium.com/@piero.casusolv/implementing-rag-with-vue3-fastapi-and-qdrant-and-how-is-this-compared-to-openai-gpts-afa5d5e8d08f).
 
 ## Implementation Disclaimer
 After the release of Open AI GPT's, this server was shutdown in order to make a full client web application redirecting to GPT's. This is in order to save resources. However, this application can be cloned, tested and modified if needed. For frontend implementation see [this repo](https://github.com/IA-PieroCV/chatresume-frontend). For client implementation [click here](https://chatapp.intautomation.net). For GPT's implementation [click here](https://chat.openai.com/g/g-oK5Dh6p5x-pierocv-chat-resume).
